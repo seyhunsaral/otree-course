@@ -15,3 +15,6 @@ sections:
 - file: rolesandmatching/buyer_seller_example
 - file: rolesandmatching/matching
 - file: rolesandmatching/matchingwithroles
+- file: rolesandmatching/rubinstein
+- file: rolesandmatching/advanced_grouping
+
