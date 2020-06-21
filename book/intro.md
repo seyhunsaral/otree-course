@@ -26,3 +26,5 @@ As oTree often requires few codes in different languages like `JavaScript`, `HTM
     This document is shaped by oTree meetings initiated by `Christoph Engel` at the Max Planck Institute for Research on Collective Goods. I would like to thank all of the participants of these meetings. I am very grateful to `Oliver Kirchkamp` for his comments during these meetings. I would like to thank `Matteo Ploner` as I benefited from his [publicly available course on oTree](http://matteoploner.eco.unitn.it/courses/oTreeIntro/oTree.html) when I prepare the structure of the course and I was inspired of some of his examples and representations.
 
 -->
+
+Testing automatic build
