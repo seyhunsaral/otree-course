@@ -2,7 +2,7 @@ About this document
 ============================
 ![logo](./figures/base/cover_half.png)
 ## What is this?
-These are the lecture notes of `oTree` workshop at the *Max Planck Institute for Research on Collective Goods*.
+These are the lecture notes of `oTree` workshop at the *Max Planck Institute for Research on Collective Goods*. 
 
 
 ## Prequisites
@@ -20,6 +20,7 @@ As oTree often requires few codes in different languages like `JavaScript`, `HTM
 * [oTree Official Website](https://www.otree.org/)
 * [oTree Documentation](https://otree.readthedocs.io/en/latest/)
 * [oTree Paper (Chen et al. 2016)](https://www.sciencedirect.com/science/article/pii/S2214635016000101)
+* [oTree Course by Matteo Ploner](http://matteoploner.eco.unitn.it/courses/oTreeIntro/oTree.html)
 
 <!--
 ## Acknowledgements
