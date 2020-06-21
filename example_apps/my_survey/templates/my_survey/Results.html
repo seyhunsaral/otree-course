@@ -1,0 +1,24 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Resuls
+{% endblock %}
+
+{% block content %}
+    Thank you for completing the survey {{ player.name }}. You are {{ player.age }} years old.
+    {% if player.is_student %}
+    You are a student! Good for you
+        {%  else %}
+        You are not a student
+    {%  endif %}
+
+    <div class="alert alert-success">
+You have chosen Option {% if player.risky_selected %} A {% else %} B {% endif %}  and you earned {{ player.payoff }} from the experiment.
+</div>
+
+
+    {% next_button %}
+{% endblock %}
+
+

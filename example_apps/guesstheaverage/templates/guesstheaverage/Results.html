@@ -1,0 +1,26 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Results
+{% endblock %}
+<ul>
+{% block content %}
+  <li>The guesses were: {{ guesses }}</li>
+  <li>Your guess was: {{ player.guess }} </li>
+  <li> The average is: {{ group.average_guess | floatformat}} </li>
+</ul>
+
+  </li>
+
+{% if player.is_winner %}
+Your guess was the best guess.
+You win {{ Constants.reward }}
+{% else %}
+You didn't win.
+{% endif %}
+ </br>
+Your payoff is {{ player.payoff | c }}.
+
+{% endblock %}
+

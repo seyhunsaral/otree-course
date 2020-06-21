@@ -1,0 +1,13 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Questions
+{% endblock %}
+
+{% block content %}
+ Please answer following questions:
+    {% formfields %}
+    {% next_button %}
+
+{% endblock %}

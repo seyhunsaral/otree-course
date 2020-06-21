@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Guess the number
+{% endblock %}
+
+{% block content %}
+
+You are in a group of {{ Constants.players_per_group }}. You have to tell a number between 0
+and 100. The number closest to the average of the group
+wins. Please enter your guess below.
+
+
+    {% formfields %}
+    {% next_button %}
+
+{% endblock %}

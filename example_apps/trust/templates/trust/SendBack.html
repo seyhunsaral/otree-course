@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+{% block title %}
+Please make a decision
+{% endblock %}
+
+{% block content %}
+
+<p>
+  You are selected as Player 2.
+  Player 1 chose to transfer you {{ group.sent_amount }} points thus you have {{tripled_amount}} points.
+</p>
+
+{% formfields %}
+
+{% next_button %}
+
+
+{% endblock %}

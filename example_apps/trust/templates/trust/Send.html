@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+{% block title %}
+Please make a decision
+{% endblock %}
+
+{% block content %}
+
+<p>
+  You are selected as Player 1. You have {{Constants.endowment }} points. 
+  You can transfer some amount of it to Player 2.
+</p>
+
+{% formfields %}
+
+{% next_button %}
+
+
+{% endblock %}
+

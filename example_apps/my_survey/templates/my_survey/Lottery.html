@@ -1,0 +1,42 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Lottery
+{% endblock %}
+
+
+{% block content %}
+
+
+    <table class="table-responsive mt-3 mytable">
+    <tr>
+      <th class="col-3"><h3 class="bg-primary p-2">Option A</h3></th>
+      <th class="col-3"><h3 class="bg-primary p-2">Option B</h3></th>
+    </tr>
+    <tr>
+      <td><h4>50% chance to win {{ Constants.risky_amount }} EUR, otherwise 0<h2></td>
+        <td><h4>Safe {{ Constants.safe_amount }} EUR</h4></td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+ Please tell us which option you'd like?
+    {% formfields %}
+    {% next_button %}
+
+
+
+
+<style>
+ .mytable {
+     text-align: center;
+ }
+</style>
+
+{% endblock %}

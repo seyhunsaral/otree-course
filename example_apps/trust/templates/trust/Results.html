@@ -1,0 +1,27 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Results
+{% endblock %}
+
+{% block content %}
+{% if player.id_in_group == 1 %}
+<p>
+  You sent Participant 1 {{ group.sent_amount }}.
+  Participant 2 returned {{ group.sent_back_amount }}.
+</p>
+{% else %}
+<p>
+  Participant 1 sent you {{ group.sent_amount }}.
+  You returned {{ group.sent_back_amount }}.
+</p>
+
+{% endif %}
+
+<p>
+  Your payoff is {{ player.payoff }}.
+</p>
+
+{% endblock %}
+

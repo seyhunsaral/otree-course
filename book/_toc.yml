@@ -1,0 +1,17 @@
+file: intro
+sections:
+- header: Introduction
+- file: introduction/otree_architechture
+#- file: introduction/python_essentials
+- header: Individual Decisions
+- file: individual/individual
+- header: Groups
+- file: group/homogenous
+- file: group/guess_the_average
+- file: group/heterogeneous
+- file: group/trustgame
+- header: Roles and Matching
+- file: rolesandmatching/roles.md
+- file: rolesandmatching/buyer_seller_example
+- file: rolesandmatching/matching
+- file: rolesandmatching/matchingwithroles
