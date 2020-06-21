@@ -28,4 +28,3 @@ As oTree often requires few codes in different languages like `JavaScript`, `HTM
 
 -->
 
-Testing automatic build
