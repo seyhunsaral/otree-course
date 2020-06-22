@@ -17,6 +17,9 @@ If you are missing the technical aspects (item 2 and 3), you can just try to fol
 As oTree often requires few codes in different languages like `JavaScript`, `HTML`, `CSS` and so on, any kind of knowledge on either of them helps. I will try to cover also the basics of each of those but the priority will be on teaching the concepts of `oTree`. So for a deeper understanding on these languages, you can refer to other resources. But this is **not necessary for this course**.
 
 ## Resources
+
+* [GitHub Repository of the course](https://github.com/seyhunsaral/otree-course)
+
 * [oTree Official Website](https://www.otree.org/)
 * [oTree Documentation](https://otree.readthedocs.io/en/latest/)
 * [oTree Paper (Chen et al. 2016)](https://www.sciencedirect.com/science/article/pii/S2214635016000101)

@@ -1,0 +1,30 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Results
+{% endblock %}
+
+{% block content %}
+  {% if player.role == "proposer" %}
+    {% if group.response == "accept" %} 
+      Your offer was accepted
+    {% endif %}
+    {% if group.response == "reject" %} 
+      Your offer was rejected
+    {% endif %}
+  {% endif %}
+
+  {% if player.role == "responder" %}
+    {% if group.response == "accept" %} 
+      You accepted the offer
+    {% endif %}
+    {% if group.response == "reject" %} 
+      You rejected the offer
+    {% endif %}
+  {% endif %}
+
+    {% next_button %}
+{% endblock %}
+
+
