@@ -4,12 +4,35 @@ Practice: Rubinstein Bargaining Game
 
 We will create a Rubinstein Bargaining Game with follwing properties:
 
-* One pie: 100 ECU
+* The pie to bargain on: 100 ECU
 * Two players: One proposes, one accepts/rejects
-* Fixed groups
-* In each round the proposer and responder switch roles
-* In each round the pie dimnishes by 25 ECU 
+* If the responder accept the proposal, they recieve the relevant amount. If not in the next round:
+  * They swith roles
+  * The pie dimnishes by 25 ECU
 * If there is no agreement, the game stops after the 4th round. (When the total pie is over)
 
-* After the 4th round, the groups reshuffle for another 4 rounds.
+* In our game we will have two separate games. The players play the game twice with different partners.
+
+
+# Planning the game
+
+
+<!--
+```{figure} ../figures/trust_game_str.png
+---
+name: trust_game_str
+---
+Trust Game Structure
+```
+-->
+| Page         | Description                                      |
+|--------------|--------------------------------------------------|
+| MatchInfo    | Display informaiton about matching               |
+| Offer        | Proposer offers an amout between `0` and `100`   |
+| WaitOffer    | Responder waits                                  |
+| Response     | Responder accepts or rejects the offer           |
+| WaitResponse | Proposer waits                                   |
+| Results      | They will both see whether it is accepted or not |
+| FinalResults | They will see the final payoffs                  |
+
 
