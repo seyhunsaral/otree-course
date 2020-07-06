@@ -10,12 +10,10 @@ from otree.api import (
 )
 
 
-author = 'Ali Seyhun Saral'
+author = 'Your name here'
 
 doc = """
-Rubinstein bargaining
-
-* Partner matching for 4 rounds, rematch, another partner matching for 4 rounds
+Your app description
 """
 
 
@@ -23,54 +21,59 @@ class Constants(BaseConstants):
     name_in_url = 'rubinstein'
     players_per_group = 2
     num_rounds = 8
-    
+
     initial_pie = c(100)
-    dimninshing = c(25)
+    dimnishing = c(25)
 
 
 class Subsession(BaseSubsession):
     def creating_session(self):
-        if self.round_number == 1:
-            players = self.get_players()
-            for p in players:
-                p.participant.vars['finished'] = False
-
+        print("Creating session is executed")
+        print(self.round_number)
+        print(self.round_number in [1,5])
         if self.round_number in [1,5]:
             self.group_randomly()
-            
-            
+            print("Creating session is executed conditionally")
 
         else:
-            if self.round_number < 5:
-                self.group_like_round(1)
-            elif self.round_number > 5:
-                self.group_like_round(5)
-                
+            self.group_like_round(self.round_number -1)
+
         print(self.get_group_matrix())
 
-        for g in self.get_groups():
-            if self.round_number < 5:
-                g.current_pie = Constants.initial_pie - ((self.round_number -1) * Constants.dimninshing)
-            if self.round_number >= 5:
-                g.current_pie = Constants.initial_pie - ((self.round_number -5) * Constants.dimninshing)
+        for p in self.get_players():
+            p.participant.vars['payoff_list'] = []
+
+
 
 
 class Group(BaseGroup):
+    offer = models.CurrencyField(min=0, label = "How much would you like to offer?", widget = widgets.Slider())
+    response = models.StringField(choices = ["accept", "reject"], label = "Please tell your response",)
     current_pie = models.CurrencyField()
+    selected_part = models.IntegerField()
 
-    offer = models.CurrencyField(min=0, max=current_pie, label="Please write how much would you like to offer the other player",
-                                 widget=widgets.Slider(show_value=True))
+#    def calculate_current_pie(self):
+#        self.current_pie = 
 
-    response = models.StringField(label= "Please tell us would you rather accept or reject the offer?", choices=[["accept", "Accept the Offer"],["reject", "Reject the Offer"]])
-    
     def offer_max(self):
+        self.current_pie = Constants.initial_pie - ((self.round_number -1) % 4 )* Constants.dimnishing
         return self.current_pie
 
 
+    def set_payoffs(self):
+        import random
+        self.selected_part = random.choice([1,2])
+        print("running")
+
+        for p in self.get_players():
+            p.payoff = p.participant.vars['payoff_list'][self.selected_part - 1]
+        
+        
+        
+
 class Player(BasePlayer):
     def role(self):
-        if self.round_number % 2 == 0:
-            return { 1: 'proposer', 2: 'responder'}[self.id_in_group]
+        if self.round_number % 2 == 1:
+            return {1: 'proposer', 2: 'responder'}[self.id_in_group]
         else:
-            return { 1: 'responder', 2: 'proposer'}[self.id_in_group]
-
+            return {2: 'proposer', 1: 'responder'}[self.id_in_group]

@@ -78,7 +78,7 @@ class Results(Page):
         print("payoff list for",self.participant.id_in_session, self.participant.vars['payoff_list'])
         return self.group.response in ["accept", "reject"]
 
-        
+         
 class BeforeFinalResults(WaitPage):
     after_all_players_arrive = 'set_payoffs'
 

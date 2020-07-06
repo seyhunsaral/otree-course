@@ -2,11 +2,46 @@
 {% load otree static %}
 
 {% block title %}
-    Response
+Response
 {% endblock %}
 
 {% block content %}
-    {% formfields %}
-    {% next_button %}
+<canvas id="myChart"></canvas>
+The proposer had {{ group.current_pie }} to allocate and the he/she offered {{ group.offer }}
 
-{% endblock %}
+{% formfields %}
+{% next_button %}
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script>
+
+ let me = js_vars.offer;
+ let other = js_vars.current_pie - me;
+ let dimnished = 100 - js_vars.current_pie; 
+
+ console.log(js_vars);
+ console.log(other);
+ console.log(dimnished);
+
+ var ctx = document.getElementById("myChart").getContext('2d');
+ var myChart = new Chart(ctx, {
+     type: 'pie',
+     data: {
+         labels: ["You", "The Other", "dimnished"],
+         datasets: [{
+             backgroundColor: [
+                 "#2ecc71",
+                 "#3498db",
+                 "#888888"
+             ],
+             data: [me, other, dimnished]
+         }]
+     }
+ });
+</script>
+
+  {% endblock %}
+
+
+
+

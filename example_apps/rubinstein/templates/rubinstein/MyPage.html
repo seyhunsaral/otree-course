@@ -1,8 +1,12 @@
 {% extends "global/Page.html" %}
 {% load otree static %}
 
+{% block title %}
+    Page title
+{% endblock %}
+
 {% block content %}
-<h1> You are being matched with another partner from next round on</h1>
+
     {% next_button %}
 
 {% endblock %}

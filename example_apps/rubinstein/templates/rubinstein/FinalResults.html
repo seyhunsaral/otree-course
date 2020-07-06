@@ -1,0 +1,32 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load humanize %}
+
+{% block title %}
+Thank you for your participation
+{% endblock %}
+
+{% block content %}
+<ul>
+  {% for i in participant.vars.payoff_list %}
+  <li>Your payoff in Part {{ forloop.counter }} was {{ i }}</li>
+  {% endfor %}
+  <li>  {{ group.selected_part | ordinal}} part was selected for the payment. </li>
+  <li>You earned {{ participant.payoff }} in that part.</li>
+</ul>
+
+</br>
+
+
+
+
+
+<center>
+  <div class="alert alert-success" role="alert">
+    Your monetary earning is {{ participant.payoff_plus_participation_fee}}
+  </div>
+</br>
+
+  <h6 class="text-muted"> Now you can close your browser. </h6>
+</center>
+{% endblock %}

@@ -6,25 +6,65 @@ Results
 {% endblock %}
 
 {% block content %}
-  {% if player.role == "proposer" %}
-    {% if group.response == "accept" %} 
-      Your offer was accepted
-    {% endif %}
-    {% if group.response == "reject" %} 
-      Your offer was rejected
-    {% endif %}
-  {% endif %}
 
-  {% if player.role == "responder" %}
-    {% if group.response == "accept" %} 
-      You accepted the offer
-    {% endif %}
-    {% if group.response == "reject" %} 
-      You rejected the offer
-    {% endif %}
-  {% endif %}
 
-    {% next_button %}
+{% if player.role == "proposer" %}
+{% if group.response == "accept" %} 
+
+<div class="alert alert-success m-5 mt-10" role="alert">
+  <h4 class="alert-heading"> Your offer was <b>accepted </b> </h4>
+  <p> Your partner has accepted your offer. For that reason you are sharing the pie according to the amount you proposed </p>
+  <hr>
+  <ul>
+    <li> The total pie was {{ group.current_pie }}. </li>
+    <li>You recieve <b>{{ proposer_payoff }}</b>. </li>
+    <li> Your partner recieve <b> {{ group.offer }}. </li>
+</div>
+
+{% endif %}
+{% if group.response == "reject" %} 
+
+<div class="alert alert-danger m-5 mt-10" role="alert">
+  <h4 class="alert-heading"> Your offer was <b> rejected</b> </h4>
+  <p> Your partner has rejected your offer. There was no settlement, therefore you don't share the pie this round </p>
+  <hr>
+  <ul>
+    <li> The total pie was {{ group.current_pie }}. </li>
+    <li> You  offered <b> {{ group.offer }}. </li>
+</div>
+
+
+{% endif %}
+{% endif %}
+
+{% if player.role == "responder" %}
+{% if group.response == "accept" %} 
+
+<div class="alert alert-success m-5 mt-10" role="alert">
+  <h4 class="alert-heading"> Your <b>accepted</b> the offer </h4>
+  <p> You accepted your offer. For that reason you are sharing the pie according to the amount your partner proposed </p>
+  <hr>
+  <ul>
+    <li> The total pie was {{ group.current_pie }}. </li>
+    <li>Your partner recieve <b>{{ proposer_payoff }}</b>. </li>
+    <li> You recieve <b> {{ group.offer }}. </li>
+</div>
+
+
+{% endif %}
+{% if group.response == "reject" %} 
+
+<div class="alert alert-danger m-5 mt-10" role="alert">
+  <h4 class="alert-heading"> You <b>rejected</b> the offer </h4>
+  <p> Your partner has rejected your offer. There was no settlement, therefore you don't share the pie this round </p>
+  <hr>
+  <ul>
+    <li> The total pie was {{ group.current_pie }}. </li>
+    <li> Your partner offered <b> {{ group.offer }}. </li>
+</div>
+
+{% endif %}
+{% endif %}
+
+{% next_button %}
 {% endblock %}
-
-

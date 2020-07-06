@@ -2,10 +2,11 @@
 {% load otree static %}
 
 {% block title %}
-    Offer
+Offer
 {% endblock %}
 
 {% block content %}
+You have {{ group.current_pie }} to allocate.
     {% formfields %}
     {% next_button %}
 
