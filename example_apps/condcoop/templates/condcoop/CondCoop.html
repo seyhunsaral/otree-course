@@ -1,0 +1,24 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    How much would you like to contribute if your group on average contributed the following amounts?
+{% endblock %}
+
+{% block content %}
+      <div class="row justify-content-center">
+    {% for field in form %}
+
+       <div class="card align-items-center bg-light m-5" >
+         <div class="card-header"> if the average contribtuion is {{field.label}}</div>
+         <h5 class="card-title m-1"> I contribute:</h5>
+           {{ field }}  </div>
+
+
+    {% endfor %}
+
+</div>
+
+    {% next_button %}
+
+{% endblock %}
