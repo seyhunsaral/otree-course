@@ -1,0 +1,6 @@
+dict(
+        name='multiapp',
+        display_name="CondCoop and Result",
+        num_demo_participants=1,
+        app_sequence=['condcoop', 'selfish', 'result'],
+     ),
