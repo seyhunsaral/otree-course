@@ -1,7 +1,7 @@
 Apps
 ==========================
 
-I am still working on the lecture notes for this part. Meanwhile you can access to [our slides by clicking here(https://docs.google.com/presentation/d/1L3UyKD2kBBGpyaIsEKxz6pwK65HUhtNU0nPv1DGZsEo/edit?usp=sharing)
+I am still working on the lecture notes for this part. Meanwhile you can access to [our slides here](https://docs.google.com/presentation/d/1L3UyKD2kBBGpyaIsEKxz6pwK65HUhtNU0nPv1DGZsEo/edit?usp=sharing)
 
 
 
