@@ -2,4 +2,4 @@ book/_build/
 book/_static/
 __pycache__/
 *.*~
-
+*.*#

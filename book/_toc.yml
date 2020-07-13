@@ -17,6 +17,8 @@ sections:
 - file: rolesandmatching/matchingwithroles
 - file: rolesandmatching/rubinstein
 - file: rolesandmatching/advanced_grouping
+- header: Apps
+- file: apps/apps.md
 - header: Reference
 - file: reference/attributes_and_methods
 - file: reference/triggers
