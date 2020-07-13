@@ -38,3 +38,5 @@ class Player(BasePlayer):
     cc_3 = models.IntegerField(min=0, max=5, label="3")
     cc_4 = models.IntegerField(min=0, max=5, label="4")
     cc_5 = models.IntegerField(min=0, max=5, label="5")
+
+    contribution = models.IntegerField()
