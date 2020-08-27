@@ -22,3 +22,4 @@ sections:
 - header: Reference
 - file: reference/attributes_and_methods
 - file: reference/triggers
+- file: reference/ubuntu_server_setup
