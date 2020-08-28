@@ -160,13 +160,12 @@ sudo ufw enable
 
 * You might not run oTree server on the port 80 when you run it from the browser after you enable ufw. This is alright as nginx will be the reverse proxy for that. Nevertheless you can stop nginx by `sudo service nginx stop`
 
-Test the nginx invitation by going to c101-038.cloud.gwdg.de (not /demo). Sometimes oTree's redirection to /demo/ page staty in the cache. If yo usee that the hostname link you write is directed to /demo/ you can delete the cache or basically open a private browser and try there.
+Test the nginx invitation by going to `http://your-host-name`. Sometimes oTree's redirection to `/demo/` page stay in the cache of the browser. So you might be redirected to `your-host-name/demo/`. If this happens you can delete the cache or basically open a private browser and try there.
 
 * Unlink the default website
 ```
 sudo unlink /etc/nginx/sites-enabled/default
 ```
-
 
 Create the reverse proxy file:
 ```
