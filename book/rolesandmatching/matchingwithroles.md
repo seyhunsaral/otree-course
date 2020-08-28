@@ -61,7 +61,7 @@ The method with the argument, `group_randomly(fixed_id_in_group=True)` shuffles 
 
 
 
-# Putting it all together: Defining roles
+## Putting it all together: Defining roles
 
 * Let's say we would like to have two roles: `red` and `green`
 * We would like to shufle groups in the first round keep constant for the rest.
@@ -108,7 +108,7 @@ class Player(BasePlayer):
 
 ```
 
-# Using `set_group_matrix()`
+## Using `set_group_matrix()`
     * We can give a specific matching structure by using `set_group_matrix()` method in `Subsession` class. As `get_group_matrix()` gives us a nested list of groups of player objects, we should constract the same structure.
     
     * To do that, first we need to get player objects (`self.get_players()` or the original matrix (`self.get_group_matrix()`)
