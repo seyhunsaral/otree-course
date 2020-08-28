@@ -1,7 +1,7 @@
 Attributes and Methods of built-in objects
 ===========================================
 
-# `Participant`
+## `Participant`
 ```
 ['DoesNotExist',
 'Meta',
@@ -159,7 +159,7 @@ Attributes and Methods of built-in objects
 'waitpagepassage_set']
 ```
 
-# `Player`
+## `Player`
 
 ```
 ['DoesNotExist',
@@ -288,7 +288,7 @@ Attributes and Methods of built-in objects
 ```
 
 
-# `Group`
+## `Group`
 
 ```
 ['DoesNotExist',
@@ -407,7 +407,7 @@ Attributes and Methods of built-in objects
 'write_stuff']
 ```
 
-# `Page`
+## `Page`
 
 ```
 ['GroupClass',
