@@ -1,5 +1,5 @@
-oTree Ubuntu Server Setup
--------------------------
+# oTree Ubuntu Server Setup
+
 This is a step-by-step guide for setting up `oTree` on an `Ubuntu` server. This is, of course, not the only way to install oTree on a server and it involves several personal choices but I believe it might be helpful to some people.
 
 
@@ -299,12 +299,12 @@ We will use self signed Let's encrypt
 sudo add-apt-repository ppa:certbot/certbot
 ```
 
-install certbot for nginx
+* install certbot for nginx
 ```
 sudo apt install python-certbot-nginx
 ```
 
-Create the certificate
+* Create the certificate
 ```
 sudo certbot --nginx -d yourhostnamehere
 ```
