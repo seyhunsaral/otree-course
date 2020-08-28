@@ -50,9 +50,9 @@ Instances of classes: We will talk in detail on the next lectures
 Object model. Source: [oTree Documentation - Conceptual Overview](https://otree.readthedocs.io/en/latest/conceptual_overview.html#self-extended-examples)
 ```
 
-# Reaching other objects 
+### Reaching other objects 
 
-## `Player` class
+### `Player` class
 ```
 class Player(BasePlayer):
 
@@ -79,7 +79,7 @@ class Player(BasePlayer):
         self.in_all_rounds()
 ```
 
-## `Group` class
+### `Group` class
 ```
 class Group(BaseGroup):
     def example(self):
@@ -97,7 +97,7 @@ class Group(BaseGroup):
 
 ```
 
-## `Page` class
+### `Page` class
 ```
 class MyPage(Page):
     def example(self):
