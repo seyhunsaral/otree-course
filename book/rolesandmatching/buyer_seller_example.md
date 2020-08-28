@@ -77,7 +77,7 @@ We can also shorten the if conditions as the following:
         return {1: 'buyer', 2: 'seller'}[self.id_in_group]
 ```
 
-# Balanced number of roles in a variable group size
+## Balanced number of roles in a variable group size
 * Imagine that we have a variable group size (for instance group size is a treatment variable). And we would like to balance our 3 roles. (say `buyer`, `seller`, `observer`). We have several possibilities to go for. 
 
 
@@ -126,7 +126,7 @@ Which can be reduced to:
 ```{figure} ../figures/roles_7_players.png
 ```
 
-## Fixed roles in each round/app
+### Fixed roles in each round/app
 
 In order to fix a role, we can store it in our `participant.vars`. 
 
