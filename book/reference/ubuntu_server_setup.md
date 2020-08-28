@@ -5,6 +5,7 @@ This is a step-by-step guide for setting up `oTree` on an `Ubuntu` server. This 
 
 ## Components
 * oTree running on `Django`
+* Nginx (Web server for reverse proxy)
 * Postgresql (Database)
 * Redis (Data cache)
 * Supervisor (Manages oTree)
