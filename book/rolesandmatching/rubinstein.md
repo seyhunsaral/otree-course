@@ -14,9 +14,9 @@ We will create a Rubinstein Bargaining Game with follwing properties:
 * In our game we will have two separate games. The players play the game twice with different partners.
 
 
-# Planning the game
+## Planning the game
 
-## Pages
+### Pages
 <!--
 ```{figure} ../figures/trust_game_str.png
 ---
@@ -36,7 +36,7 @@ Trust Game Structure
 | FinalResults | They will see the final payoffs                  |
 
 
-## Variables in `models.py`
+### Variables in `models.py`
 
 | Variable          | Description                                        | Scope     | Field/Type              |
 | -------------     | ----------------------------------                 | --------  | ----------              |
@@ -50,9 +50,9 @@ Trust Game Structure
 | current_pie       | Current size (undimnished part) of the pie         | Group     | **CurrencyField**         |
 
 
-# Building the game
+## Building the game
 
-## Constants 
+### Constants 
 We start by defining constants in our `models.py`. Nothing tricky there:
 
 ```
@@ -64,7 +64,7 @@ We start by defining constants in our `models.py`. Nothing tricky there:
     dimnishing = c(25)
 ```
 
-## Group variables
+### Group variables
 * We define the variables in `models.py` as we planned:
 
 ```
@@ -89,7 +89,7 @@ We define it by this method in `Group` class:
 
 
 
-## Matching
+### Matching
 * We have a particular matching structure:
   * Players will be grouped randomly in round 1
   * They will play with the same partner until the pie dimnishes (4 rounds)
@@ -108,7 +108,7 @@ class Subsession(BaseSubsession):
         print(self.get_group_matrix()) # Here we add the print statement so we can actually see it.
 ```
 
-## Roles
+### Roles
 We want roles to be switched in each round, ie, the player who was the proposer should be the responder in the second round (if exists) and proposer again in the third round and so on. We can rely on `id_in_group` attribute in `Player` class. So:
 
 ```
@@ -125,11 +125,11 @@ Here we use the modulus operator (`%`) which lets us to check if the round numbe
 
 So far we are done with the `models.py` for the basic functionality. We will return here later.
 
-# Pages 
+## Pages 
 
 First we create the pages with form input:
 
-## Offer page
+### Offer page
 
 ```
 class Offer(Page):
