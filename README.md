@@ -1,8 +1,8 @@
 # The Unoffical oTree Community Book
 <img src="https://raw.githubusercontent.com/seyhunsaral/otree-course/master/raw_resources/cb_cover.png">
 
-The link for the book
-<h2> <a href="https://otreecb.netlify.app"></h2>
+
+<h2> <a href="https://otreecb.netlify.app" target="_blank">Click here for the book</h2>
 
 This is an collaborative open book and course materials about experimental economics software [oTree](https://www.otree.org/). 
 
