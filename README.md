@@ -1,9 +1,10 @@
-# The Unoffical oTree Community Book
-<img src="https://raw.githubusercontent.com/seyhunsaral/otree-course/master/raw_resources/cb_cover.png">
+# The Unoffical oTree Community Book/Course
+<img src="https://raw.githubusercontent.com/seyhunsaral/otree-course/master/book/figures/base/cover_half.png">
 
 
-<h2> <a href="https://otreecb.netlify.app" target="_blank">Click here for the book</h2>
+<h2> <a href="https://otreecb.netlify.app">Click here for the book</h2>
 
+## About
 This is an collaborative open book and course materials about experimental economics software [oTree](https://www.otree.org/). 
 
 The course material is licensed under <a rel="ccalicense" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> and the supporting code is licensed under <a rel="mitlicense" href="https://opensource.org/licenses/MIT"> MIT License </a>.
