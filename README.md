@@ -1,3 +1,6 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)
+
 # The Unoffical oTree Community Book/Course
 <img src="https://raw.githubusercontent.com/seyhunsaral/otree-course/master/book/figures/base/cover_half.png">
 
