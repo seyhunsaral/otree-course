@@ -15,7 +15,7 @@ You are free to copy, modify and distribute the materials as long as you attribu
 
 This book was started as a collection of lecture notes for the oTree workshop at the *Max Planck Institute for Research on Collective Goods* in 2020. 
 
-Created and currently maintained by [Ali Seyhun Saral](https://www.saral.it)
+Created and currently maintained by [Ali Seyhun Saral](https://www.saral.it). I am (always) looking for contributors and collaborators.
 
 
 ## Prequisites
