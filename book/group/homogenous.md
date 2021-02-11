@@ -1,6 +1,6 @@
 Homogenous Groups
 =================
-In this part we will talk about groups with heterogeneous members. Which means every group member will have the same role in the game. 
+In this part, we will talk about groups with homogeneous members. Which means every group member will have the same role in the game. 
 
 
 First let's talk about the differences between individual tasks and such a heterogeneous group task.
