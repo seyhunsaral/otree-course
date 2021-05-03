@@ -5,9 +5,9 @@ oTree Architecture
 
 * oTree is a platform/software package to run online/lab experiments.
 
-* Participants interact with the experiments and with each other by using their browsers
+* Participants interact with the experimenters and with each other by using their browsers
 
-* oTree runs on/as web server 
+* oTree runs on/as webserver 
     * It may run on your computer for development (local installation)
     * It runs on a physical server (Server setup)
     * It runs on cloud services (Heroku, oTree hub, AWS, DigitalOcean etc.)
@@ -16,14 +16,14 @@ oTree Architecture
    * Manual programming (Dominantly Python)
    * Point-and-click interface (oTree Studio)
    
-* In this book we teach and refer to the the first mode.
+* In this book, we teach and refer to the first mode.
 
-* Point-and-click interface is available here: [oTree Studio](https://otree.readthedocs.io/en/latest/studio.html) (Free for small/medium sized projects, paid subsription of the rest) 
+* Point-and-click interface is available here: [oTree Studio](https://otree.readthedocs.io/en/latest/studio.html) (Free for small/medium-sized projects, paid subsription of the rest) 
 
 
 (otree_architecture:comp)=
 ## oTree and z-Tree comparision
-This comparision is for those who already use z-Tree {cite}`fischbacher2007z`. If you don't know what z-Tree is or you have never used it, please feel free to skip.
+This comparison is for those who already use z-Tree {cite}`fischbacher2007z`. If you don't know what z-Tree is or have never used it, please feel free to skip it.
 
 ### `z-Tree` is click & run, `oTree` needs a server
 
@@ -43,9 +43,7 @@ If you use z-Tree, you know that, for a basic setup, all you need to do is to ru
    
    
 ### `z-Tree` needs client software, `oTree` doesn't.
-  * With `z-Tree`, clients require a software to run on their computer. With `oTree` they connect to the experiment with a web browser (Firefox, Chromium, Google Chrome etc.).
-
-
+  * With `z-Tree`, clients require software to run on their computer. With `oTree` they connect to the experiment with a web browser (Firefox, Chromium, Google Chrome, etc.).
 
 
 
