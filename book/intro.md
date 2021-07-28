@@ -4,7 +4,7 @@ About this document
 
 ![logo](./figures/base/cover_half.png)
 </div>
-## Warning
+## Warning  
 In the last year, many changes were introduced with with oTree 5. Even though the core concepts stayed the same, the project structure and commands changed significantly. This book is written for oTree 3 and after these changes, I put this project on a hiatus.
 
 Soon (planned August 2021), I will update the contents in line with oTree 5 and I will be open for contributions.
