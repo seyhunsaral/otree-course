@@ -1,7 +1,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)
 
-## WARNING: In the last year there were many changes with oTree 5. Even though the core concepts stayed the same, the project structure and commands changed significantly. This book is written for oTree 3. Soon (planned August 2021), I will update the contents in line with oTree 5. 
+## WARNING: In the last year there were many changes with oTree 5. Even though the core concepts stayed the same, the project structure and commands changed significantly. This book is written for oTree 3. Soon, I will update the contents in line with oTree 5. 
 
 
 # The Unoffical oTree Community Book/Course
